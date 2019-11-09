@@ -12,7 +12,6 @@ public class RemoveDupli26 {
         int i = 0;
         int j = 0;
 
-        if(n == 0)return 0;
         while(j<n) {
             if (nums[j] == nums[i]) {
                 j++;
@@ -20,7 +19,7 @@ public class RemoveDupli26 {
                 nums[++i] = nums[j++];
             }
         }
-        return nums.length;
+        return nums.length == 0 ? 0:i+1;
 
     }
 
